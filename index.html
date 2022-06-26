@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="Design.css">
+    <script src="ToDo.js" defer></script>
+</head>
+
+<body>
+    <main class="app">
+        <section class="detail">
+            <h2 class="title">
+                Category <input type="text" id="name" placeholder="Category">
+              </h2>
+        </section>
+
+        <section class="my-todo">
+            <h3>Create a Todo List</h3>
+            <form id="my-todo-form">
+                <input type="text" placeholder="e.g. Add your Tasks" name="content" id="content" />
+                <input type="text" placeholder="e.g. Till 12pm" name="endLine" id="endLine" />
+                <input type="submit" value="Add Your Tasks" />
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>Todo List</h3>
+            <div class="list" id="todo-list">
+            </div>
+            </div>
+        </section>
+
+    </main>
+</body>

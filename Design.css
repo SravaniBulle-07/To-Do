@@ -1,0 +1,135 @@
+
+:root {
+  --dark: black;
+  --light: #fff;
+}
+
+
+
+* {
+  margin: 0  ;
+  padding: 0;
+  box-sizing:content-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+h3 {
+  color:cyan;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  background-color:darkorange;
+  color: white;
+}
+
+section {
+  margin: 5rem 1.5rem;
+}
+
+
+.detail .title {
+  display: flex;
+}
+
+.title input {
+  margin-left: 1rem;
+  color:cyan;
+  font-size: 1.5rem;
+}
+
+.my-todo input[type="text"] {
+  display: block;
+  width: 50%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: black;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-todo input[type="submit"] {
+  display: block;
+  width: 50%;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color:cornflowerblue ;
+  border-radius: 0.5rem;
+  cursor:pointer;
+}
+
+.my-todo input[type="submit"]:hover {
+  opacity: 1;
+}
+.todo-list .list {
+  margin: 1rem 0;
+}
+
+.todo-item {
+  display: flex;
+ width:60%;
+  align-items: center;
+  background-color:greenyellow;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-item label {
+  display: block;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.todo-item .content {
+  flex: 1 1 0%;
+}
+.todo-item input[type="text"] {
+  font-size: 1.125rem;
+  color: black;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions button {
+  width:50%;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  opacity: 0.75;
+}
+
+.edit {
+  background-color: black;
+  margin-right: 0.50rem;
+}
+
+.delete {
+  background-color: black;
+  margin-right: 0.5rem;
+}
+
+.todo-done .todo-item .content input {
+  text-decoration: line-through;
+  color: grey;
+}
